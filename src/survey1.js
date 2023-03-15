@@ -4,17 +4,12 @@ export const surveyJson = {
     "title": "Survey Questionnaire",
     "logoHeight": "100px",
     "logoPosition": "right",
-    "completedHtml": "<img src=\"https://www.greaterparkersburg.com/wp-content/uploads/2021/09/PKB_logo.svg\" alt=\"pkb logo\" style=\"width:300px;display:block; margin: 20px auto;\" />\n<h3>Thank you for taking the time to complete this survey. We truly value the information you have provided. </h3>",
+    "completedHtml": "<h3>Thank you for taking the time to complete this survey. We truly value the information you have provided.</h3><p><a href='https://www.greaterparkersburg.com/'>See the latest at GreaterParkersburg.com</a></p>",
     "pages": [
         {
             "name": "page1",
             "elements": [
-                {
-                    "type": "image",
-                    "name": "image1",
-                    "imageLink": "https://www.greaterparkersburg.com/wp-content/uploads/2021/09/PKB_logo.svg",
-                    "contentMode": "image"
-                },
+
                 {
                     "type": "html",
                     "name": "Intro",

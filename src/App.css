@@ -1,10 +1,26 @@
 body,html {
+    --background-dim: #e5e7f3;
     background-color: var(--background-dim, #f3f3f3);
     --primary: #0c6cc4;
     font-size: 18px;
     line-height:1.4;
+    color: #252525;
+    padding:0 1.5vw;
 }
-
+.logo {
+    width:450px;
+    max-width:80%;
+    height:auto;
+    display: block;
+    margin:40px auto 0 auto;
+}
 h1 {
     font-size: 1.2rem;
+}
+a  {
+    color: var(--primary);
+}
+
+.sd-btn:not(:disabled) {
+    transition: all 100ms;
 }
