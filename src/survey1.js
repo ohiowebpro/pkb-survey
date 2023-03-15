@@ -18,7 +18,7 @@ export const surveyJson = {
                 {
                     "type": "html",
                     "name": "Intro",
-                    "html": "<p>Thank for visiting Greater Parkersburg!  We sincerely hope you enjoyed your visit with us and will return in the future. We would be very appreciative if you would take 5 minutes of your time to answer a few questions that will help us improve our visitor services. </p>"
+                    "html": "<h1>Thank for visiting Greater Parkersburg! </h1><p>We sincerely hope you enjoyed your visit with us and will return in the future. We would be very appreciative if you would take 5 minutes of your time to answer a few questions that will help us improve our visitor services. </p>"
                 }
             ]
         },
@@ -38,15 +38,15 @@ export const surveyJson = {
                     "isRequired": true,
                     "choices": [
                         {
-                            "value": "Item 1",
+                            "value": "A visit to see friends or family for leisure",
                             "text": "A visit to see friends or family for leisure"
                         },
                         {
-                            "value": "Item 2",
+                            "value": "A holiday or short getaway",
                             "text": "A holiday or short getaway"
                         },
                         {
-                            "value": "Item 3",
+                            "value": "A business trip",
                             "text": "A business trip"
                         }
                     ],
@@ -64,23 +64,23 @@ export const surveyJson = {
                     "isRequired": true,
                     "choices": [
                         {
-                            "value": "Item 1",
+                            "value": "Visited by myself",
                             "text": "Visited by myself"
                         },
                         {
-                            "value": "Item 2",
+                            "value": "Two",
                             "text": "Two"
                         },
                         {
-                            "value": "Item 3",
+                            "value": "Three",
                             "text": "Three"
                         },
                         {
-                            "value": "Item 4",
+                            "value": "Four",
                             "text": "Four"
                         },
                         {
-                            "value": "Item 5",
+                            "value": "More than four",
                             "text": "More than four"
                         }
                     ]
@@ -103,23 +103,23 @@ export const surveyJson = {
                     "isRequired": true,
                     "choices": [
                         {
-                            "value": "Item 1",
+                            "value": "One",
                             "text": "One"
                         },
                         {
-                            "value": "Item 2",
+                            "value": "Two",
                             "text": "Two"
                         },
                         {
-                            "value": "Item 3",
+                            "value": "Three",
                             "text": "Three"
                         },
                         {
-                            "value": "Item 4",
+                            "value": "Four or more",
                             "text": "Four or more"
                         },
                         {
-                            "value": "Item 5",
+                            "value": "Did not stay overnight",
                             "text": "Did not stay overnight"
                         }
                     ]
@@ -136,35 +136,35 @@ export const surveyJson = {
                     "isRequired": true,
                     "choices": [
                         {
-                            "value": "Item 1",
+                            "value": "Arts & Entertainment",
                             "text": "Arts & Entertainment"
                         },
                         {
-                            "value": "Item 2",
+                            "value": "Blennerhassett Island Historical State Park",
                             "text": "Blennerhassett Island Historical State Park"
                         },
                         {
-                            "value": "Item 3",
+                            "value": "Discovery World on Market",
                             "text": "Discovery World on Market"
                         },
                         {
-                            "value": "Item 4",
+                            "value": "Fairs and Festivals",
                             "text": "Fairs and Festivals"
                         },
                         {
-                            "value": "Item 5",
+                            "value": "Henderson Hall Plantation",
                             "text": "Henderson Hall Plantation"
                         },
                         {
-                            "value": "Item 6",
+                            "value": "Mountwood Park",
                             "text": "Mountwood Park"
                         },
                         {
-                            "value": "Item 7",
+                            "value": "North Bend State Park",
                             "text": "North Bend State Park"
                         },
                         {
-                            "value": "Item 8",
+                            "value": "Oil & Gas Museum",
                             "text": "Oil & Gas Museum"
                         }
                     ],
@@ -182,31 +182,31 @@ export const surveyJson = {
                     "isRequired": true,
                     "choices": [
                         {
-                            "value": "Item 1",
+                            "value": "Recommended by family/relatives",
                             "text": "Recommended by family/relatives"
                         },
                         {
-                            "value": "Item 2",
+                            "value": "Have visited before",
                             "text": "Have visited before"
                         },
                         {
-                            "value": "Item 3",
+                            "value": "Advertising in newspapers/magazines",
                             "text": "Advertising in newspapers/magazines"
                         },
                         {
-                            "value": "Item 4",
+                            "value": "Advertising on a website",
                             "text": "Advertising on a website"
                         },
                         {
-                            "value": "Item 5",
+                            "value": "Tourism brochure",
                             "text": "Tourism brochure"
                         },
                         {
-                            "value": "Item 6",
+                            "value": "Interest in area history",
                             "text": "Interest in area history"
                         },
                         {
-                            "value": "Item 7",
+                            "value": "Specific outdoor recreation activities",
                             "text": "Specific outdoor recreation activities"
                         }
                     ],
@@ -224,27 +224,27 @@ export const surveyJson = {
                     "isRequired": true,
                     "choices": [
                         {
-                            "value": "Item 1",
+                            "value": "16-24",
                             "text": "16-24"
                         },
                         {
-                            "value": "Item 2",
+                            "value": "25-34",
                             "text": "25-34"
                         },
                         {
-                            "value": "Item 3",
+                            "value": "35-44",
                             "text": "35-44"
                         },
                         {
-                            "value": "Item 4",
+                            "value": "45-54",
                             "text": "45-54"
                         },
                         {
-                            "value": "Item 5",
+                            "value": "55-64",
                             "text": "55-64"
                         },
                         {
-                            "value": "Item 6",
+                            "value": "65+",
                             "text": "65+"
                         }
                     ]

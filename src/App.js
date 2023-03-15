@@ -1,9 +1,9 @@
 import { useCallback } from 'react';
 
-import logo from './logo.svg';
-import './App.css';
+
 
 import 'survey-core/defaultV2.min.css';
+import './App.css';
 import { Model } from 'survey-core';
 import { Survey } from 'survey-react-ui';
 
