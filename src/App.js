@@ -17,15 +17,9 @@ function App() {
         const results = JSON.stringify(sender.data);
         //sender.data
         var formData = new FormData();
-        formData.append('SurveyId', '1');
+        formData.append('SurveyId', process.env.SURVEYNUMBER);
         formData.append('Json', results);
-        fetch('https://www.greaterparkersburg.com/wp-admin/admin-ajax.php', {  // Enter your IP address here
-            headers : {
-                'Access-Control-Allow-Headers': '*',
-                'Access-Control-Allow-Origin': '*',
-                'Access-Control-Allow-Methods': '*',
-                'Content-Type': 'text/html; charset=UTF-8'
-            },
+        fetch('https://www.greaterparkersburg.com/wp-admin/admin-ajax.php?action=SurveyJS_SaveResult', {
             method: 'POST',
             body: formData // body data type must match "Content-Type" header
 
