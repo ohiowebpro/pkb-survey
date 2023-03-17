@@ -219,8 +219,8 @@ export const json = {
                     "isRequired": true,
                     "choices": [
                         {
-                            "value": "16-24",
-                            "text": "16-24"
+                            "value": "18-24",
+                            "text": "18-24"
                         },
                         {
                             "value": "25-34",
