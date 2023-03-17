@@ -6,8 +6,6 @@ import './App.css';
 import logo from './PKB_logo.svg';
 
 
-//import { surveyJson } from "./survey1";
-const surveyNumber = process.env.REACT_APP_SURVEYNUMBER;
 
 function App() {
     return (

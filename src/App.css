@@ -24,3 +24,11 @@ a  {
 .sd-btn:not(:disabled) {
     transition: all 100ms;
 }
+.thankyou {
+    padding:  0 1.5vw;
+    max-width:500px;
+    margin: 40px auto 0 auto;
+}
+.thankyou p {
+    text-align: center;
+}

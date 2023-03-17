@@ -5,9 +5,11 @@ import * as Survey from 'survey-react-ui';
 //import { Survey } from 'survey-react-ui';
 import { json } from '../surveys/surveyone';
 
-const Mysurvey = () => {
+const Mysurvey = (prop) => {
     return (
         <Survey.Survey
+            showCompletedPage={false}
+            onComplete={data=>prop.showCompletedPage(data.valuesHash)}
             json={json}
         />
     )
