@@ -1,6 +1,8 @@
 import React from 'react';
 import 'survey-core/defaultV2.min.css';
-import * as Survey from 'survey-react-ui';
+import * as Survey from 'survey-react';
+import "./recaptcha";
+
 
 //import { Survey } from 'survey-react-ui';
 import { json } from '../surveys/surveyone';

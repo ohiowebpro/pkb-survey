@@ -156,6 +156,17 @@ export const json = {
                     ]
                 }
             ]
+        },
+        {
+            name: "page8",
+            elements: [
+                {
+                    type: "recaptcha",
+                    name: "captchaValidation",
+                    title: "Make sure you are you.",
+                    isRequired: true
+                }
+            ]
         }
     ],
     showTitle: false

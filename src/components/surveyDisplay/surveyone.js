@@ -9,30 +9,34 @@ const Surveyone = () => {
     const [showPage, setShowPage] = useState(true);
     const onCompletePage = useCallback((data) => {
 
-
-
-        let today = new Date().toLocaleString() + "";
-        data.question9 =  today;
-        data.question10 = surveyLoc;
-
         console.log(data);
-        const results = JSON.stringify(data);
-        const formData = new FormData();
-        formData.append('SurveyId', surveyNumber);
-        formData.append('Json', results);
-        fetch('https://www.greaterparkersburg.com/wp-admin/admin-ajax.php?action=SurveyJS_SaveResult', {
-            method: 'POST',
-            body: formData // body data type must match "Content-Type" header
 
-        }).then(function(response) {
-            if(!response.ok) throw new Error(response.status);
-            else  setShowPage(!showPage);
-        }).catch(function() {
-            alert("Error saving survey. Please try again later.");
+        if (data.captchaValidation) {
+            let today = new Date().toLocaleString() + "";
+            data.question9 =  today;
+            data.question10 = surveyLoc;
 
-        });
+            console.log(data);
+            const results = JSON.stringify(data);
+            const formData = new FormData();
+            formData.append('SurveyId', surveyNumber);
+            formData.append('Json', results);
+            fetch('https://www.greaterparkersburg.com/wp-admin/admin-ajax.php?action=SurveyJS_SaveResult', {
+                method: 'POST',
+                body: formData // body data type must match "Content-Type" header
 
+            }).then(function(response) {
+                if(!response.ok) throw new Error(response.status);
+                else  setShowPage(!showPage);
+            }).catch(function() {
+                alert("Error saving survey. Please try again later.");
 
+            });
+        } else {
+
+            // reCAPTCHA validation failed, show an error message or handle it accordingly
+            alert("Please complete the reCAPTCHA validation before submitting the form.");
+        }
 
 
 
