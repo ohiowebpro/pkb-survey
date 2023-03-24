@@ -1,6 +1,8 @@
 import React,{useState, useCallback} from 'react';
 import Mysurvey from "../surveyTypes/surveytypeone";
 
+const surveyLoc ='Test Survey';
+
 
 const surveyNumber = process.env.REACT_APP_SURVEYNUMBER;
 const Surveyone = () => {
@@ -8,10 +10,12 @@ const Surveyone = () => {
     const onCompletePage = useCallback((data) => {
 
 
+
+        let today = new Date().toLocaleString() + "";
+        data.question9 =  today;
+        data.question10 = surveyLoc;
+
         console.log(data);
-
-
-
         const results = JSON.stringify(data);
         const formData = new FormData();
         formData.append('SurveyId', surveyNumber);
@@ -52,4 +56,5 @@ const Surveyone = () => {
         </div>
     )
 }
+
 export default Surveyone;

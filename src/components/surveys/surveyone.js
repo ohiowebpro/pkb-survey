@@ -1,252 +1,163 @@
 
 
 export const json = {
-    "title": "Survey Questionnaire",
-    "logoHeight": "100px",
-    "logoPosition": "right",
-    "completedHtml": "<h3>Thank you for taking the time to complete this survey. We truly value the information you have provided.</h3><p><a href='https://www.greaterparkersburg.com/'>See the latest at GreaterParkersburg.com</a></p>",
-    "pages": [
+    title: "Survey Questionnaire",
+    logoHeight: "100px",
+    logoPosition: "right",
+    completedHtml: "<h3>Thank you for taking the time to complete this survey. We truly value the information you have provided.</h3><p><a href='https://www.greaterparkersburg.com/'>See the latest at GreaterParkersburg.com</a></p>",
+    pages: [
         {
-            "name": "page1",
-            "elements": [
-
+            name: "page1",
+            elements: [
                 {
-                    "type": "html",
-                    "name": "Intro",
-                    "html": "<h1>Thank for visiting Greater Parkersburg! </h1><p>We sincerely hope you enjoyed your visit with us and will return in the future. We would be very appreciative if you would take 5 minutes of your time to answer a few questions that will help us improve our visitor services. </p>"
+                    type: "html",
+                    name: "Intro",
+                    html: "<h1>Thank for visiting Greater Parkersburg! </h1><p>We sincerely hope you enjoyed your visit with us and will return in the future. We would be very appreciative if you would take 5 minutes of your time to answer a few questions that will help us improve our visitor services. </p><div id='g-recaptcha'></div> <div class='form-group g-recaptcha' data-callback='verifyCaptcha' data-sitekey='6LfwWoYdAAAAAAgBDLAgtuR8QboDe5uTKjFJ7x1N'></div>"
                 }
             ]
         },
         {
-            "name": "page2",
-            "elements": [
+            name: "page2",
+            elements: [
                 {
-                    "type": "text",
-                    "name": "question1",
-                    "title": "Please provide your home zip code below.",
-                    "isRequired": true
+                    type: "text",
+                    name: "question1",
+                    title: "Please provide your home zip code below.",
+                    isRequired: true
                 },
                 {
-                    "type": "radiogroup",
-                    "name": "question2",
-                    "title": "Which of the following best describes your trip to Parkersburg? ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "A visit to see friends or family for leisure",
-                            "text": "A visit to see friends or family for leisure"
-                        },
-                        {
-                            "value": "A holiday or short getaway",
-                            "text": "A holiday or short getaway"
-                        },
-                        {
-                            "value": "A business trip",
-                            "text": "A business trip"
-                        }
+                    type: "text",
+                    name: "question9",
+                    visible: false,
+                    title: "Date",
+                    titleLocation: "hidden"
+                },
+                {
+                    type: "text",
+                    name: "question10",
+                    visible: false,
+                    title: "Location",
+                    titleLocation: "hidden"
+                },
+                {
+                    type: "radiogroup",
+                    name: "question2",
+                    title: "Which of the following best describes your trip to Parkersburg? ",
+                    isRequired: true,
+                    choices: [
+                        "A visit to see friends or family for leisure",
+                        "A holiday or short getaway",
+                        "A business trip"
                     ],
-                    "showOtherItem": true
+                    showOtherItem: true
                 }
             ]
         },
         {
-            "name": "page3",
-            "elements": [
+            name: "page3",
+            elements: [
                 {
-                    "type": "radiogroup",
-                    "name": "question3",
-                    "title": "How many people were in your party? ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "Visited by myself",
-                            "text": "Visited by myself"
-                        },
-                        {
-                            "value": "Two",
-                            "text": "Two"
-                        },
-                        {
-                            "value": "Three",
-                            "text": "Three"
-                        },
-                        {
-                            "value": "Four",
-                            "text": "Four"
-                        },
-                        {
-                            "value": "More than four",
-                            "text": "More than four"
-                        }
+                    type: "radiogroup",
+                    name: "question3",
+                    title: "How many people were in your party? ",
+                    isRequired: true,
+                    choices: [
+                        "Visited by myself",
+                        "Two",
+                        "Three",
+                        "Four",
+                        "More than four"
                     ]
                 }
             ]
         },
         {
-            "name": "page4",
-            "elements": [
+            name: "page4",
+            elements: [
                 {
-                    "type": "boolean",
-                    "name": "question4",
-                    "title": "Was this your first visit to Parkersburg? ",
-                    "isRequired": true
+                    type: "boolean",
+                    name: "question4",
+                    title: "Was this your first visit to Parkersburg? ",
+                    isRequired: true
                 },
                 {
-                    "type": "radiogroup",
-                    "name": "question5",
-                    "title": "How many nights did you stay? ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "One",
-                            "text": "One"
-                        },
-                        {
-                            "value": "Two",
-                            "text": "Two"
-                        },
-                        {
-                            "value": "Three",
-                            "text": "Three"
-                        },
-                        {
-                            "value": "Four or more",
-                            "text": "Four or more"
-                        },
-                        {
-                            "value": "Did not stay overnight",
-                            "text": "Did not stay overnight"
-                        }
+                    type: "radiogroup",
+                    name: "question5",
+                    title: "How many nights did you stay? ",
+                    isRequired: true,
+                    choices: [
+                        "One",
+                        "Two",
+                        "Three",
+                        "Four or more",
+                        "Did not stay overnight"
                     ]
                 }
             ]
         },
         {
-            "name": "page5",
-            "elements": [
+            name: "page5",
+            elements: [
                 {
-                    "type": "checkbox",
-                    "name": "question6",
-                    "title": "Did you come to Parkersburg to see a specific attraction, participate in an activity, or attend an event? If so, please check below all that apply to your most recent visit. ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "Arts & Entertainment",
-                            "text": "Arts & Entertainment"
-                        },
-                        {
-                            "value": "Blennerhassett Island Historical State Park",
-                            "text": "Blennerhassett Island Historical State Park"
-                        },
-                        {
-                            "value": "Discovery World on Market",
-                            "text": "Discovery World on Market"
-                        },
-                        {
-                            "value": "Fairs and Festivals",
-                            "text": "Fairs and Festivals"
-                        },
-                        {
-                            "value": "Henderson Hall Plantation",
-                            "text": "Henderson Hall Plantation"
-                        },
-                        {
-                            "value": "Mountwood Park",
-                            "text": "Mountwood Park"
-                        },
-                        {
-                            "value": "North Bend State Park",
-                            "text": "North Bend State Park"
-                        },
-                        {
-                            "value": "Oil & Gas Museum",
-                            "text": "Oil & Gas Museum"
-                        }
+                    type: "checkbox",
+                    name: "question6",
+                    title: "Did you come to Parkersburg to see a specific attraction, participate in an activity, or attend an event? If so, please check below all that apply to your most recent visit. ",
+                    isRequired: true,
+                    choices: [
+                        "Arts & Entertainment",
+                        "Blennerhassett Island Historical State Park",
+                        "Discovery World on Market",
+                        "Fairs and Festivals",
+                        "Henderson Hall Plantation",
+                        "Mountwood Park",
+                        "North Bend State Park",
+                        "Oil & Gas Museum"
                     ],
-                    "showNoneItem": true
+                    showNoneItem: true
                 }
             ]
         },
         {
-            "name": "page6",
-            "elements": [
+            name: "page6",
+            elements: [
                 {
-                    "type": "radiogroup",
-                    "name": "question7",
-                    "title": "Which of the following, if any, prompted you to visit Parkersburg",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "Recommended by family/relatives",
-                            "text": "Recommended by family/relatives"
-                        },
-                        {
-                            "value": "Have visited before",
-                            "text": "Have visited before"
-                        },
-                        {
-                            "value": "Advertising in newspapers/magazines",
-                            "text": "Advertising in newspapers/magazines"
-                        },
-                        {
-                            "value": "Advertising on a website",
-                            "text": "Advertising on a website"
-                        },
-                        {
-                            "value": "Tourism brochure",
-                            "text": "Tourism brochure"
-                        },
-                        {
-                            "value": "Interest in area history",
-                            "text": "Interest in area history"
-                        },
-                        {
-                            "value": "Specific outdoor recreation activities",
-                            "text": "Specific outdoor recreation activities"
-                        }
+                    type: "radiogroup",
+                    name: "question7",
+                    title: "Which of the following, if any, prompted you to visit Parkersburg",
+                    isRequired: true,
+                    choices: [
+                        "Recommended by family/relatives",
+                        "Have visited before",
+                        "Advertising in newspapers/magazines",
+                        "Advertising on a website",
+                        "Tourism brochure",
+                        "Interest in area history",
+                        "Specific outdoor recreation activities"
                     ],
-                    "showNoneItem": true
+                    showNoneItem: true
                 }
             ]
         },
         {
-            "name": "page7",
-            "elements": [
+            name: "page7",
+            elements: [
                 {
-                    "type": "radiogroup",
-                    "name": "question8",
-                    "title": "What is your age? ",
-                    "isRequired": true,
-                    "choices": [
-                        {
-                            "value": "18-24",
-                            "text": "18-24"
-                        },
-                        {
-                            "value": "25-34",
-                            "text": "25-34"
-                        },
-                        {
-                            "value": "35-44",
-                            "text": "35-44"
-                        },
-                        {
-                            "value": "45-54",
-                            "text": "45-54"
-                        },
-                        {
-                            "value": "55-64",
-                            "text": "55-64"
-                        },
-                        {
-                            "value": "65+",
-                            "text": "65+"
-                        }
+                    type: "radiogroup",
+                    name: "question8",
+                    title: "What is your age? ",
+                    isRequired: true,
+                    choices: [
+                        "18-24",
+                        "25-34",
+                        "35-44",
+                        "45-54",
+                        "55-64",
+                        "65+"
                     ]
                 }
             ]
         }
     ],
-    "showTitle": false
+    showTitle: false
 };
 
