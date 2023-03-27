@@ -23,7 +23,12 @@ export const json = {
                     type: "text",
                     name: "question1",
                     title: "Please provide your home zip code below.",
-                    isRequired: true
+                    isRequired: true,
+                    "validators": [{
+                        "type": "regex",
+                        "regex": "^\\d{5}$",
+                        "text": "Your zipcode must be 5 numbers"
+                    }]
                 },
                 {
                     type: "text",
