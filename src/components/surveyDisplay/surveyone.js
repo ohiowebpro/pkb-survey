@@ -20,7 +20,12 @@ const Surveyone = () => {
         const formData = new FormData();
         formData.append('SurveyId', surveyNumber);
         formData.append('Json', results);
-        fetch('https://www.greaterparkersburg.com/wp-admin/admin-ajax.php?action=SurveyJS_SaveResult', {
+
+        const fetchURL = 'https://www.greaterparkersburg.com/wp-admin/admin-ajax.php?action=SurveyJS_SaveResult';
+        //const fetchURL = '';
+
+
+        fetch(fetchURL, {
             method: 'POST',
             body: formData // body data type must match "Content-Type" header
 
