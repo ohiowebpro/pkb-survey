@@ -1,12 +1,20 @@
 import React,{useState, useCallback} from 'react';
 import Mysurvey from "../surveyTypes/surveytypeone";
 
-const surveyLoc ='Test Survey';
+
 
 
 const surveyNumber = process.env.REACT_APP_SURVEYNUMBER;
+
+//const surveyLoc ='Test Survey';
+const searchParams = new URLSearchParams(document.location.search);
+let surveyLoc = searchParams.get('loc');
+if (!surveyLoc) {
+    surveyLoc ='Test Survey';
+}
 const Surveyone = () => {
     const [showPage, setShowPage] = useState(true);
+
     const onCompletePage = useCallback((data) => {
 
 
@@ -21,8 +29,8 @@ const Surveyone = () => {
         formData.append('SurveyId', surveyNumber);
         formData.append('Json', results);
 
-        const fetchURL = 'https://www.greaterparkersburg.com/wp-admin/admin-ajax.php?action=SurveyJS_SaveResult';
-        //const fetchURL = '';
+        // const fetchURL = 'https://www.greaterparkersburg.com/wp-admin/admin-ajax.php?action=SurveyJS_SaveResult';
+        const fetchURL = 'https://dev.pcv788.build/wp-admin/admin-ajax.php?action=add_surveyjs_entry';
 
 
         fetch(fetchURL, {
