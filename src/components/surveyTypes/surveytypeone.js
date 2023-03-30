@@ -1,17 +1,18 @@
-import React from 'react';
+import React from "react";
+import "survey-react/modern.css";
+import * as Survey from "survey-react";
 import 'survey-core/defaultV2.min.css';
-import * as Survey from 'survey-react-ui';
-
-//import { Survey } from 'survey-react-ui';
-import { json } from '../surveys/surveyone';
+import "./RecaptchaWidget";
+import { json } from "../surveys/surveyone";
 
 const Mysurvey = (prop) => {
     return (
         <Survey.Survey
             showCompletedPage={false}
-            onComplete={data=>prop.showCompletedPage(data.valuesHash)}
-            json={json}
+            onComplete={(survey) => prop.showCompletedPage(survey.data)}
+            model={new Survey.Model(json)}
         />
-    )
-}
+    );
+};
+
 export default Mysurvey;

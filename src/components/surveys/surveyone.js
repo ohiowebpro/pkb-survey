@@ -12,7 +12,13 @@ export const json = {
                 {
                     type: "html",
                     name: "Intro",
-                    html: "<h1>Thank for visiting Greater Parkersburg! </h1><p>We sincerely hope you enjoyed your visit with us and will return in the future. We would be very appreciative if you would take 5 minutes of your time to answer a few questions that will help us improve our visitor services. </p><div id='g-recaptcha'></div> <div class='form-group g-recaptcha' data-callback='verifyCaptcha' data-sitekey='6LfwWoYdAAAAAAgBDLAgtuR8QboDe5uTKjFJ7x1N'></div>"
+                    html: "<h1>Thank for visiting Greater Parkersburg! </h1><p>We sincerely hope you enjoyed your visit with us and will return in the future. We would be very appreciative if you would take 5 minutes of your time to answer a few questions that will help us improve our visitor services. </p>"
+                },
+                {
+                    type: "recaptcha",
+                    name: "recaptcha",
+                    title: "Please complete the reCAPTCHA challenge:",
+                    isRequired: true
                 }
             ]
         },
