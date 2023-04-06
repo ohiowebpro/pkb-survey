@@ -47,12 +47,13 @@ export const json = {
                 {
                     type: "radiogroup",
                     name: "question2",
-                    title: "Which of the following best describes your trip to Parkersburg? ",
+                    title: "Which of the following best describes your time in Parkersburg? ",
                     isRequired: true,
                     choices: [
                         "A visit to see friends or family for leisure",
                         "A holiday or short getaway",
-                        "A business trip"
+                        "A business trip",
+                        "I am from this area"
                     ],
                     showOtherItem: true
                 }
@@ -67,7 +68,7 @@ export const json = {
                     title: "How many people were in your party? ",
                     isRequired: true,
                     choices: [
-                        "Visited by myself",
+                        "Just me",
                         "Two",
                         "Three",
                         "Four",
@@ -82,13 +83,13 @@ export const json = {
                 {
                     type: "boolean",
                     name: "question4",
-                    title: "Was this your first visit to Parkersburg? ",
+                    title: "Is this your first time in Parkersburg? ",
                     isRequired: true
                 },
                 {
                     type: "radiogroup",
                     name: "question5",
-                    title: "How many nights did you stay? ",
+                    title: "If you stayed overnight, how many nights did you stay? ",
                     isRequired: true,
                     choices: [
                         "One",
@@ -137,7 +138,8 @@ export const json = {
                         "Advertising on a website",
                         "Tourism brochure",
                         "Interest in area history",
-                        "Specific outdoor recreation activities"
+                        "Specific outdoor recreation activities",
+                        "I am from this area"
                     ],
                     showNoneItem: true
                 }

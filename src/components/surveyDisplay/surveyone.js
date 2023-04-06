@@ -29,8 +29,8 @@ const Surveyone = () => {
         formData.append('SurveyId', surveyNumber);
         formData.append('Json', results);
 
-        // const fetchURL = 'https://www.greaterparkersburg.com/wp-admin/admin-ajax.php?action=SurveyJS_SaveResult';
-        const fetchURL = 'https://dev.pcv788.build/wp-admin/admin-ajax.php?action=add_surveyjs_entry';
+        const fetchURL = 'https://www.greaterparkersburg.com/wp-admin/admin-ajax.php?action=SurveyJS_SaveResult';
+        //const fetchURL = 'https://dev.pcv788.build/wp-admin/admin-ajax.php?action=add_surveyjs_entry';
 
 
         fetch(fetchURL, {
