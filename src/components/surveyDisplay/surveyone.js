@@ -53,9 +53,9 @@ const Surveyone = () => {
 
     },[showPage])
     const setFinalPage = ()=> {
-        const text = '<div className="thankyou"><h3>Thank you for taking the time to complete this survey. We truly value the information you have provided.</h3><h2 style="text-align:center;">$50 Amazon Gift Card</h2><p>As a small token of our appreciation we would like to enter you in our giveaway for a $50 Amazon Gift Card. We will be giving away one $50 Amazon Gift Card every three months. All you need to do is provide your name and email address where indicated below. So enter now! You will receive an email confirmation of your participation.</p><p><i>Odds of winning depend upon the number of eligible entries received during the entry period. No purchase necessary</i></p><p style="text-align:center; font-size:1.2rem;"><a href="https://www.greaterparkersburg.com/gift-card-givaway/">Enter to Win$50 Amazon Gift Card</a></p></div>';
+        const text = '<h3>Thank you for taking the time to complete this survey. We truly value the information you have provided.</h3><h2 style="text-align:center;">$50 Amazon Gift Card</h2><p>As a small token of our appreciation we would like to enter you in our giveaway for a $50 Amazon Gift Card. We will be giving away one $50 Amazon Gift Card every three months. All you need to do is provide your name and email address where indicated below. So enter now! You will receive an email confirmation of your participation.</p><p><i>Odds of winning depend upon the number of eligible entries received during the entry period. No purchase necessary.</i></p><p style="text-align:center; font-size:1.3rem; font-weight:700;"><a href="https://www.greaterparkersburg.com/gift-card-givaway/">Enter to Win $50 Amazon Gift Card</a></p>';
 
-        return <div dangerouslySetInnerHTML={{ __html: text }} />;
+        return <div className="thankyou" dangerouslySetInnerHTML={{ __html: text }} />;
     }
     return (
         <div >
